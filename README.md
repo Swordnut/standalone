@@ -29,6 +29,12 @@ select whether to include sub-folders
 select your default crs for output 
 Let it run and monitor the output message box. It should tell you where its looking and what its finding.  
 
+## NGR_to_E_N
+
+Work in Progress
+
+Converts a column of NGR cordinates (british national grid coords formatted as a string e.g., TQ12341234) to integer eastings and northings (x/y coordsinates in British National Grid Projection)
+Im not sure how it would handle the grids at the extreme south-west
 
 ## scrape_files_in_folders_for_strings
 
