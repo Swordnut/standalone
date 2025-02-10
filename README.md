@@ -15,6 +15,21 @@ Output is saved in a new subfolder
 
 Simple script to concatenate all csv files in a user input folder. Appends all rows without replicating headers
 
+## georaster_catalogue_with_bboxes
+
+This script finds all georefferenced files in a folder (and optionaly, its subfolders). It generates a bounding box and saves attributes for the filepath, crs, coordinates and saves the reult as a .gpkg
+
+This still may need some tweaking to get the UI more useful. Currently I need ot add a user input field for skip_keywords list values
+It does cause issues with memory when accessing cloud document archives, but I think that is mostly to do with the cloud archive than the script.
+The script is threaded to speed things up. That means it saves in batches but I have not implemented a method to concatenate the output. 
+
+Edit the script to input a list of folder name elemnts to skip past
+Select a folder
+select whether to include sub-folders
+select your default crs for output 
+Let it run and monitor the output message box. It should tell you where its looking and what its finding.  
+
+
 ## scrape_files_in_folders_for_strings
 
 This may need a little tweaking to streamline entering variables
